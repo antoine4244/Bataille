@@ -8,7 +8,8 @@ public class Main {
         a.display();
         b.display();
         c.display();
-        
+        Voiture d = new Voiture("Renault");
+        d.display();
 
     }
 }
