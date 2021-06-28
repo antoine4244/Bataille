@@ -1,25 +1,19 @@
 package com.exemple;
 
-//public class Deck {
-//    private ArrayList<Card> cards;
-//
-//    {
-//        cards = new ArrayList<Card>();
-//    }
-//
-//    public Card getCard(int index){
-//        return cards.get[index];
-//    }
-//
-//    public Card pullTopCard(){
-//        return cards.get[0];
-//    }
-//
-//    public void adCard(Card card){
-//        cards.add(Joueur.pullCard);
-//    }
-//
-//    public void removeCard(int index){
-//        cards.remove(index);
-//    }
-//}
+public class Card {
+    private int value;
+    private String color;
+    private String name;
+
+    public int getValue() {
+        return value;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public String getName() {
+        return name;
+    }
+}
