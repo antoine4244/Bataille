@@ -1,31 +1,32 @@
 package com.exemple;
 
 public class Card {
-    private int value;
-    private String color;
-    private String name;
+    /** attribut **/
+    private final CardValue lValue;
+    private final CardSign lSign;
 
-    public int getValue(){
-        return value;
+    /** Énumérations **/
+    public enum CardValue {
+        DEUX, TROIS, QUATRE, CINQ, SIX, SEPT, HUIT, NEUF, DIX, VALET, DAME, ROI, AS
     }
 
-    public int getColor(){
-        return color;
+    public enum CardSign {
+        PIQUES, TREFLES, CARREAUX, COEURS
     }
 
-    public String getName(){
-        return name;
+    /** constructeurs **/
+    public Card(CardValue pValue, CardSign pSign){
+        lValue = pValue;
+        lSign = pSign;
     }
 
-    public void setValue(int value){
-        this.value=value;
+    /** méthodes **/
+
+    public CardValue getValue() {
+        return lValue;
     }
 
-    public void setValue(int name){
-        this.value=name;
-    }
-
-    public void setValue(int color){
-        this.value=color;
+    public CardSign getlSign() {
+        return lSign;
     }
 }
